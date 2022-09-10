@@ -1,7 +1,22 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 15rem;
 }
-
+.particleContainer {
+  height: 100vh;
+  display: grid;
+}
+.relative {
+  position: relative;
+  color: #ffffff;
+}
+.displayFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about {
+  background: linear-gradient(#fff, #000);
+}
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -125,5 +140,17 @@
   }
   .logo img {
     filter: invert(1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+  .displayFlex {
+    display: grid;
+    place-items: center;
+  }
+  .particleContainer {
+    justify-content: center;
   }
 }

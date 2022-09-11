@@ -77,7 +77,7 @@ const ParticleComponent = () => {
     <div className={styles.relative}>
       <div className={styles.displayFlex}>
       <NameComponent />
-      <LinkedinBadge />
+      {/* <LinkedinBadge /> */}
       </div>
       {/* <SkillDetails /> */}
       <ProfileButtons />

@@ -1,107 +1,69 @@
 .profileName {
-    position: relative;
-    color: hsl(0, 0%, 100%);
-    font-size: 8rem;
-    font-weight: 700;
-    margin-bottom: 0;
+  position: relative;
+  color: hsl(0, 0%, 100%);
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 .subTitle {
   font-size: 3em;
-    margin: 0;
-    color : #ffffff;
-    font-weight : 700
-}
-.displayBlock {
-  display : block;
-}
-.aboutContainer {
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr 1fr;
-  background: #ffffff20;
-  padding: 5rem;
-}
-.skillContainer {
-  display: grid;
-  grid-template-columns: 1fr;
-  /* background: linear-gradient(to right, rgba(255,0,0,0), rgba(16, 255,0,1)); */
-  padding: 5rem;
-}
-.skillBars {
-  background: repeating-linear-gradient(40deg, #2aaf4199, #22212199 15px, rgb(107, 59, 59) 15px, rgb(27 199 40) 30px);
-  height: 2.5rem;
-  border-radius: 10px;
-  padding-left: 1.5rem;
-  font-weight: 600;
-}
-.skillText {
-  display: grid;
-    place-items: center;
-    color: #fff;
-    font-size: 5rem;
-    font-weight: 600;
-}
-.mainSkillBar {
-  background: #00000050;
-  margin: 0 2.5rem 2.5rem;
-  border-radius: 10px;
-}
-.aboutDescription {
+  margin: 0;
   color: #ffffff;
-  font-size: 2rem;
-}
-.aboutText {
-  color: #ffffff;
-  font-size: 5rem;
-  font-weight: 600;
-  margin : 0;
-}
-  .imageBox {
-    width: auto;
-    height : auto;
-    background: #000000;
-    margin : 10px;
-    padding : 0.5rem;
-    justify-content: center;
-    display: grid;
-    place-items: center;
-  }
-  .displayGrid {
-    display: grid;
-    align-items: center;
-    margin: 3rem 0;
-    grid-template-columns: auto auto auto auto auto auto;
-  }    
-         
-.btngrad {
-    background-image: linear-gradient(to right, #642B73 0%, #C6426E  51%, #642B73  100%);
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    border-radius: 10px;
-    display: block;
-    margin: 0 2rem 0 0;
-  }
-
-  .btngrad:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-  }
-.skillGrid {
-  display: grid;
-    margin: 3rem 0;
-    grid-template-columns: auto auto;
+  font-weight: 700;
 }
 .btnContainer {
-  display: flex;;
+  display: flex;
+  margin: 2rem 0;
+}
+.displayBlock {
+  display: block;
+  text-align: center;
+}
+
+.imageBox {
+  width: auto;
+  height: auto;
+  background: #000000;
+  margin: 10px;
+  padding: 0.5rem;
+  justify-content: center;
+  display: grid;
+  place-items: center;
+}
+.displayGrid {
+  display: grid;
+  align-items: center;
+  margin: 3rem 0;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.btngrad {
+  background-image: linear-gradient(
+    to right,
+    #642b73 0%,
+    #c6426e 51%,
+    #642b73 100%
+  );
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  margin: 0 2rem 0 0;
+  border: 0;
+}
+
+.btngrad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 @media screen and (max-width: 768px) {
   .profileName {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .subTitle {
     font-size: 2em;
@@ -115,14 +77,5 @@
   .btnContainer {
     display: grid;
     padding: 2rem;
-  }
-  .aboutContainer {
-    grid-template-columns: 1fr;
-  }
-  .skillContainer {
-    padding: 2rem;
-  }
-  .skillGrid {
-    grid-template-columns: auto;
   }
 }

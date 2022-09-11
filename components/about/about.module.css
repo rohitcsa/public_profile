@@ -1,0 +1,33 @@
+.aboutContainer {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    background: #ffffff20;
+    padding: 5rem;
+}
+.aboutDescription {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+.aboutText {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin : 0;
+}
+@media screen and (max-width: 768px) {
+    .aboutContainer {
+      grid-template-columns: 1fr;
+      padding: 1.5rem;
+    }
+    .aboutText {
+        font-size: 3.5rem;
+    }
+    .aboutDescription {
+        font-size: 1.4rem;
+    }
+    .aboutNameContainer {
+        display: grid;
+        place-items: center;
+    }
+  }

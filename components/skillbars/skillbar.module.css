@@ -1,0 +1,59 @@
+.skillContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* background: linear-gradient(to right, rgba(255,0,0,0), rgba(16, 255,0,1)); */
+  padding: 5rem;
+}
+.skillBars {
+  background: repeating-linear-gradient(
+    40deg,
+    #2aaf4199,
+    #22212199 15px,
+    rgb(107, 59, 59) 15px,
+    rgb(27 199 40) 30px
+  );
+  height: 2.5rem;
+  border-radius: 10px;
+  padding-left: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.skillText {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.mainSkillBar {
+  background: #00000050;
+  margin: 0 1.5rem 1.5rem;
+  border-radius: 10px;
+}
+.skillGrid {
+  display: grid;
+  margin: auto 0;
+  grid-template-columns: auto auto;
+}
+@media screen and (max-width: 768px) {
+  .skillContainer {
+    padding: 0rem;
+  }
+  .skillGrid {
+    grid-template-columns: auto;
+  }
+  .skillText {
+    font-size: 3rem;
+  }
+  .skillGrid {
+    margin: auto 0;
+  }
+  .skillBars {
+    font-size: 1.8rem;
+  }
+  .mainSkillBar {
+    margin: 0 1.5rem 1.5rem;
+  }
+}

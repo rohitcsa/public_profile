@@ -1,4 +1,4 @@
-import styles from "../../styles/profile.module.css";
+import styles from "./about.module.css";
 import Image from "next/image";
 
 const AboutMe = () => {
@@ -13,7 +13,7 @@ const AboutMe = () => {
           alt="public image"
         />
       </div>
-      <div>
+      <div className={styles.aboutNameContainer}>
         <p className={styles.aboutText}>About Me</p>
         <p className={styles.aboutDescription}>
           CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids

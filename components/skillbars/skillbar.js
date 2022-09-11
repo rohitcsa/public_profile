@@ -1,4 +1,4 @@
-import styles from "../../styles/profile.module.css";
+import styles from "./skillbar.module.css";
 
 const SkillBar = () => {
         let skills = [{

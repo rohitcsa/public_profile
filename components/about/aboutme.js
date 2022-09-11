@@ -10,6 +10,7 @@ const AboutMe = () => {
           width={400}
           height={400}
           className={styles.aboutImage}
+          alt="public image"
         />
       </div>
       <div>

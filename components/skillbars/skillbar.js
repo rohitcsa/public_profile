@@ -56,8 +56,8 @@ const SkillBar = () => {
         <div className={styles.skillContainer}>
             <h1 className={styles.skillText}>My Skills</h1>
             <div className={styles.skillGrid}>
-                {skills.map(data => {
-                    return (<div className={styles.mainSkillBar}><div className={styles.skillBars} style={{width : data.progress}}>{data.name}</div></div>)
+                {skills.map((data, i)=> {
+                    return (<div className={styles.mainSkillBar} key={i}><div className={styles.skillBars} style={{width : data.progress}}>{data.name}</div></div>)
                 })}
             </div>
         </div>
